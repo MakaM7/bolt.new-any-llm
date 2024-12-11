@@ -75,7 +75,7 @@ export function getGroqModel(apiKey: OptionalApiKey, model: string) {
 
 export function getHuggingFaceModel(apiKey: OptionalApiKey, model: string) {
   const openai = createOpenAI({
-    baseURL: 'https://api-inference.huggingface.co/v1/',
+    baseURL: 'https://gptmodelbargain.openai.azure.com/openai/deployments/gpt-35-turbo/chat/completions?api-version=2024-08-01-preview',
     apiKey,
   });
 
